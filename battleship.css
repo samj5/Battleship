@@ -1,0 +1,14 @@
+#battleshipGrid {
+    display: grid;
+    grid-template-columns: repeat(10, 30px);
+    grid-gap: 1px;
+    background-color: #fff;
+  }
+
+  .ship {
+    width: 150px; /* Adjust based on ship length and cell size */
+    height: 30px; /* Adjust to match cell height */
+    background-color: wheat;
+    margin-bottom: 10px;
+  }
+  

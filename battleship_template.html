@@ -3,9 +3,34 @@
 <html>
 <head>
     <title>Battleship Game</title>
+    <link rel="stylesheet" type="text/css" href="battleship.css">
+
 </head>
 <body>
-    <canvas id="battleshipCanvas" width="500" height="500"></canvas>
     <script src="battleship_template.js"></script>
+
+    <!-- Battleship rules and gameplay,
+    5 different kinds of ships
+    aircraft carrier is 5 squares
+    battleship is 4 squares
+    submarine and destroyer are 3 squares
+    patrol boat is 2 squares
+    each player must place their boats on a grid of 10x10 -->
+
+    <canvas id="battleshipCanvas" width="500" height="500"></canvas>
+
+    <div id="shipContainer">
+        <div id="carrier" class="ship" draggable="true" data-size="5">Carrier</div>
+        <div id="battleship" class="ship" draggable="true" data-size="4">Battleship</div>
+        <div id="submarine" class="ship" draggable="true" data-size="3">Submarine</div>
+        <div id="destroyer" class="ship" draggable="true" data-size="3">Destroyer</div>
+        <div id="patrolBoat" class="ship" draggable="true" data-size="2">Patrol Boat</div>
+    </div>
+      
+
+
+      
+   
+
 </body>
 </html>
